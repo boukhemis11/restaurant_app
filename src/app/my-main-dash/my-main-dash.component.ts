@@ -34,7 +34,7 @@ export class MyMainDashComponent implements OnInit {
   burgers: Food[];
   pizzas: Food[];
   galettes: Food[];
-  dessert: Food[];
+  desserts: Food[];
 
   constructor(private breakpointObserver: BreakpointObserver, private qlService: QuichLunchService) {}
 
@@ -42,6 +42,6 @@ export class MyMainDashComponent implements OnInit {
     this.burgers = this.qlService.getBurgers();
     this.galettes = this.qlService.getGalettes();
     this.pizzas = this.qlService.getPizzas();
-    this.dessert = this.qlService.getDessert();
+    this.desserts = this.qlService.getDessert();
   }
 }
