@@ -25,6 +25,11 @@ export class QuichLunchService {
     {id: 2, title: 'Formule du jour', description: 'galette du jour, crêpe du jour, bolée de cidre', price: 9.30}
   ];
 
+  dessert: Food[] = [
+    {id: 1, title: 'Cheesecake', description: 'une crème avec du fromage frais type Phildelphia, des œufs et du sucre', price: 3.90},
+    {id: 2, title: 'Clafoutis', description: 'La formule du clafoutis peut être utilisée avec d autres fruits que les cerises', price: 4.90}
+  ];
+
   constructor() { }
 
   getBurgers(): Food[] {
@@ -37,6 +42,10 @@ export class QuichLunchService {
 
   getGalettes(): Food[] {
     return this.galettes;
+  }
+
+  getDessert(): Food[] {
+    return this.dessert;
   }
 
 }
